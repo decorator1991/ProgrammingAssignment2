@@ -25,10 +25,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 #Second of these functions, cacheSolve, is useful to obtain inverse of the matrix
-#from the object created by makeCacheMatrix function if it exists. If it doesn't
-#exist in the corresponding object, cacheSolve function calculates the inverse
-#using Solve function and caches obtained matrix in the corresponding
-#object of makeCacheMatrix function.
+#from the object created by makeCacheMatrix function if it is found in its cache.
+#If it doesn't exist there, cacheSolve function calculates the inverse using
+#Solve function and caches obtained matrix in the corresponding object of
+#makeCacheMatrix function.
 
 cacheSolve <- function(x, ...) {
         invmatrix <- x$getinv()
